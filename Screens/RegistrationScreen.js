@@ -1,14 +1,14 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Button, TextInput } from "react-native";
 
  const RegistrationScreen = () => {
 return (
     <View style={styles.container}>
-        <Text>Registration</Text>
+        <Text style={styles.text}>Registration</Text>
         <TextInput style={styles.input} placeholder="Name"/>
         <TextInput style={styles.input} placeholder="Email"/>
         <TextInput style={styles.input} placeholder="Password"/>
-        <Button title="To Register"/>
+        <Button title="Sing up" style={styles.button}/>
     </View>
 );
 };
@@ -26,8 +26,21 @@ const styles = StyleSheet.create({
     borderColor: "orange",
     borderRadius: 5,
     padding: 10,
-    margine: "auto",
-    }
-})
+    marginButtom: 20,
+    },
+
+    button: {
+        backgroundColor: "orange",
+        color: "white",
+        borderRadius: 50,
+        padding: 10,
+        minWidth: 300,
+    },
+    text: {
+        fontSize: 24,
+        marginBottom: 20,
+
+    },
+});
 
 export default RegistrationScreen;
