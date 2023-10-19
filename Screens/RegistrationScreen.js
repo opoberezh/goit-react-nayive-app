@@ -26,7 +26,8 @@ const styles = StyleSheet.create({
     borderColor: "orange",
     borderRadius: 5,
     padding: 10,
-    marginButtom: 20,
+    marginBottom: 20,
+    width: 300,
     },
 
     button: {
