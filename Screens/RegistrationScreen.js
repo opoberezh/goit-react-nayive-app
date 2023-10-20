@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, Button, TextInput } from "react-native";
+import { StyleSheet, Text, View,  TouchableOpacity, TextInput } from "react-native";
 
  const RegistrationScreen = () => {
 return (
@@ -8,7 +8,10 @@ return (
         <TextInput style={styles.input} placeholder="Name"/>
         <TextInput style={styles.input} placeholder="Email"/>
         <TextInput style={styles.input} placeholder="Password"/>
-        <Button title="Sign Up" style={styles.button}/>
+        <TouchableOpacity style={styles.button}>
+            <Text style={styles.buttonText}>Sign Up</Text>
+        </TouchableOpacity>
+        <Text style={styles.textLogIn} >Already have an account? Log In</Text>
     </View>
 );
 };
@@ -19,30 +22,54 @@ const styles = StyleSheet.create({
         padding: 24,
         justifyContent: "center",
         alignItems: "center",
-       
+        backgroundColor: 'rgba(255, 255, 255, 1)',
+        marginTop: 263,
+        borderTopLeftRadius: 30,
+        borderTopRightRadius: 30,
+        width: 375,
     },
 
     input: {
     borderWidth: 1,
-    borderColor: "orange",
+    borderColor: "#E8E8E8",
+    backgroundColor: "#F6F6F6",
+    color: "#BDBDBD",
     borderRadius: 5,
     padding: 10,
-    marginBottom: 20,
-    width: 300,
+    marginBottom: 16,
+    width: 343,
     },
 
     button: {
         backgroundColor: "orange",
-        color: "white",
+        alignItems: "center",
+        marginTop: 27,
+        marginBottom: 16,
         borderRadius: 50,
         padding: 10,
-        minWidth: 300,
+        width: 343,
+        height: 50,
     },
+
+    buttonText: {
+        color: "white",
+        fontSize: 16,
+        fontWeight: 400,
+    },
+
     text: {
         fontSize: 24,
         marginBottom: 20,
+        fontWeight: 'bold',
 
     },
+
+    textLogIn: {
+        color: "blue",
+        fontSize: 16,
+        fontWeight: 400,
+        
+    }
 });
 
 export default RegistrationScreen;
