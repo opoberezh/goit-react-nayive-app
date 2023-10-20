@@ -8,7 +8,7 @@ return (
         <TextInput style={styles.input} placeholder="Name"/>
         <TextInput style={styles.input} placeholder="Email"/>
         <TextInput style={styles.input} placeholder="Password"/>
-        <Button title="Sing up" style={styles.button}/>
+        <Button title="Sign Up" style={styles.button}/>
     </View>
 );
 };
@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
         padding: 24,
         justifyContent: "center",
         alignItems: "center",
+       
     },
 
     input: {
